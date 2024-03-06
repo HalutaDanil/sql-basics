@@ -38,7 +38,7 @@ Resume: Today you will see how relational model works and how to get needed data
 
 ![D01_01](misc/images/D01_01.png)
 
-Standards are everywhere, and Relational Databases are under control as well :-). To be honest between us, more restricted SQL standards were at the beginning of 2000 years. Actually when the “Big Data” pattern was born, Relational Databases had their own way to realize this pattern and therefore standards right now are more ... lightweight. 
+Standards are everywhere, and Relational Databases are also under control as well :-). To be honest between us, more restricted SQL standards were at the beginning of 2000 years. Actually when the “Big Data” pattern was born, Relational Databases had their own way to realize this pattern and therefore standards are more... lightweight right now. 
 
 ![D01_02](misc/images/D01_02.png)
 
@@ -53,25 +53,25 @@ Please take a look at some SQL standards below and try to think about the future
 ## Chapter II
 ## General Rules
 
-- Use this page as the only reference. Do not listen to any rumors and speculations on how to prepare your solution.
-- Please make sure you are using the latest version of PostgreSQL.
-- That is completely OK if you are using IDE to write a source code (aka SQL script).
-- To be assessed your solution must be in your GIT repository.
-- Your solutions will be evaluated by your piscine mates.
-- You should not leave in your directory any other file than those explicitly specified by the exercise instructions. It is recommended that you modify your `.gitignore` to avoid accidents.
-- Do you have a question? Ask your neighbor on the right. Otherwise, try with your neighbor on the left.
+- - Use this page as your only reference. Do not listen to rumors and speculations about how to prepare your solution.
+- Make sure you are using the latest version of PostgreSQL.
+- It is perfectly fine if you use the IDE to write source code (aka SQL script).
+- To be evaluated, your solution must be in your GIT repository.
+- Your solutions will be evaluated by your peers.
+- You should not leave any files in your directory other than those explicitly specified by the exercise instructions. It is recommended that you modify your `.gitignore' to avoid accidents.
+- Got a question? Ask your neighbor to the right. Otherwise, try your neighbor on the left.
 - Your reference manual: mates / Internet / Google. 
-- Read the examples carefully. They may require things that are not otherwise specified in the subject.
+- Read the examples carefully. You may need things not specified in the topic.
 - And may the SQL-Force be with you!
-- Absolutely everything can be presented in SQL! Let’s start and have fun!
+- Absolutely anything can be represented in SQL! Let's get started and have fun!
 
 ## Chapter III
 ## Rules of the day
 
-- Please make sure you have an own database and access for it on your PostgreSQL cluster. 
+-  Please make sure you have your own database and access to it on your PostgreSQL cluster.
 - Please download a [script](materials/model.sql) with Database Model here and apply the script to your database (you can use command line with psql or just run it through any IDE, for example DataGrip from JetBrains or pgAdmin from PostgreSQL community). 
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
-- Please take a look at the Logical View of our Database Model. 
+- Please have a look at the Logical View of our Database Model. 
 
 ![schema](misc/images/schema.png)
 
@@ -102,7 +102,7 @@ Please take a look at some SQL standards below and try to think about the future
 - field menu_id - foreign key to menu
 - field order_date - date (for example 2022-01-01) of person order 
 
-Persons' visit and persons' order are different entities and don't contain any correlation between data. For example, a client can be in one restaurant (just looking at menu) and in this time make an order in different one by phone or by mobile application. Or another case,  just be at home and again make a call with order without any visits.
+People's visit and people's order are different entities and don't contain any correlation between data. For example, a customer can be in a restaurant (just looking at the menu) and at the same time place an order in another restaurant by phone or mobile application. Or another case, just be at home and again make a call with order without any visits.
 
 ## Chapter IV
 ## Exercise 00 - First steps into SQL world
@@ -141,8 +141,8 @@ Please make a select statement which returns names , ages for all women from the
 | Language                        | ANSI SQL                                                                                              |
 
 Please make 2 syntax different select statements which return a list of pizzerias (pizzeria name and rating) with rating between 3.5 and 5 points (including limit points) and ordered by pizzeria rating.
-- the 1st select statement must contain comparison signs  (<=, >=)
-- the 2nd select statement must contain `BETWEEN` keyword
+- the 1st select statement must contain comparison signs  (<=, >=);
+- the 2nd select statement must contain `BETWEEN` keyword.
 
 ## Chapter VII
 ## Exercise 03 - First steps into SQL world
@@ -154,7 +154,7 @@ Please make 2 syntax different select statements which return a list of pizzeria
 | **Allowed**                               |                                                                                                                          |
 | Language                        | ANSI SQL                                                                                              |
 
-Please make a select statement which returns the person's identifiers (without duplication) who visited pizzerias in a period from 6th of January 2022 to 9th of January 2022 (including all days) or visited pizzeria with identifier 2. Also include ordering clause by person identifier in descending mode.
+Please make a select statement that returns the person identifiers (without duplicates) who visited pizzerias in a period from January 6, 2022 to January 9, 2022 (including all days) or visited pizzerias with identifier 2. Also include ordering clause by person identifier in descending mode.
 
 ## Chapter VIII
 ## Exercise 04 - First steps into SQL world
@@ -172,7 +172,7 @@ Please make a select statement which returns one calculated field with name ‘p
 `Anna (age:16,gender:'female',address:'Moscow')`
 
 Finally, please add the ordering clause by calculated column in ascending mode.
-Please pay attention to quote symbols in your formula!
+Please pay attention to the quotation marks in your formula!
 
 ## Chapter IX
 ## Exercise 05 - First steps into SQL world
@@ -187,7 +187,7 @@ Please pay attention to quote symbols in your formula!
 | **Denied**                               |                                           
 | SQL Syntax Construction                        | `IN`, any types of `JOINs`                                                                                              |
 
-Please make a select statement which returns person's names (based on internal query in `SELECT` clause) who made orders for the menu with identifiers 13 , 14 and 18 and date of orders should be equal 7th of January 2022. Be aware with "Denied Section" before your work.
+Write a select statement that returns the names of people (based on an internal query in the `SELECT` clause) who placed orders for the menu with identifiers 13, 14, and 18, and the date of the orders should be January 7, 2022. Be careful with "Denied Section" before your work.
 
 Please take a look at the pattern of internal query.
 
@@ -209,7 +209,7 @@ Please take a look at the pattern of internal query.
 | **Denied**                               |                                           
 | SQL Syntax Construction                        | `IN`, any types of `JOINs`                                                                                              |
 
-Please use SQL construction from Exercise 05 and add a new calculated column (use column's name ‘check_name’) with a check statement (a pseudo code for this check is presented below) in the `SELECT` clause.
+Use the SQL construction from Exercise 05 and add a new calculated column (use column name ‘check_name’) with a check statement a pseudocode for this check is given below) in the `SELECT` clause.
 
     if (person_name == 'Denis') then return true
         else return false
@@ -225,14 +225,14 @@ Please use SQL construction from Exercise 05 and add a new calculated column (us
 | **Allowed**                               |                                                                                                                          |
 | Language                        | ANSI SQL                                                                                              |
 
-Let’s apply data intervals for the `person` table. 
-Please make a SQL statement which returns a person's identifiers, person's names and interval of person’s ages (set a name of a new calculated column as ‘interval_info’) based on pseudo code below. 
+Let's apply data intervals to the `person` table. 
+Please make an SQL statement that returns the identifiers of a person, the person's names, and the interval of the person's ages (set a name of a new calculated column as 'interval_info') based on the pseudo code below.
 
     if (age >= 10 and age <= 20) then return 'interval #1'
     else if (age > 20 and age < 24) then return 'interval #2'
     else return 'interval #3'
 
-and yes...please sort a result by ‘interval_info’ column in ascending mode.
+And yes... please sort a result by ‘interval_info’ column in ascending mode.
 
 ## Chapter XII
 ## Exercise 08 - First steps into SQL world
@@ -245,7 +245,7 @@ and yes...please sort a result by ‘interval_info’ column in ascending mode.
 | **Allowed**                               |                                                                                                                          |
 | Language                        | ANSI SQL                                                                                              |
 
-Please make a SQL statement which returns all columns from the `person_order` table with rows whose identifier is an even number. The result have to order by returned identifier.
+Create an SQL statement that returns all columns from the `person_order` table with rows whose identifier is an even number. The result must be ordered by the returned identifier.
 
 ## Chapter XIII
 ## Exercise 09 - First steps into SQL world
@@ -261,7 +261,7 @@ Please make a SQL statement which returns all columns from the `person_order` ta
 | SQL Syntax Construction                        | any types of `JOINs`                                                                                              |
 
 
-Please make a select statement that returns person names and pizzeria names based on the `person_visits` table with date of visit in a period from 07th of January to 09th of January 2022 (including all days) (based on internal query in `FROM` clause) .
+Please make a select statement that returns person names and pizzeria names based on the `person_visits` table with a visit date in a period from January 07 to January 09, 2022 (including all days) (based on an internal query in the `FROM' clause).
 
 
 Please take a look at the pattern of the final query.
@@ -271,5 +271,5 @@ Please take a look at the pattern of the final query.
     FROM (SELECT … FROM person_visits WHERE …) AS pv -- this is an internal query in a main FROM clause
     ORDER BY ...
 
-Please add a ordering clause by person name in ascending mode and by pizzeria name in descending mode
+Please add a ordering clause by person name in ascending mode and by pizzeria name in descending mode.
 
