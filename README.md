@@ -1,4 +1,4 @@
-# Day 00 - Piscine SQL
+# Day 00 — Piscine SQL
 
 ## _Relational Data Model and SQL_
 
@@ -15,25 +15,25 @@ Resume: Today you will see how relational model works and how to get needed data
 3. [Chapter III](#chapter-iii) \
     3.1. [Rules of the day](#rules-of-the-day)  
 4. [Chapter IV](#chapter-iv) \
-    4.1. [Exercise 00 - First steps into SQL world](#exercise-00-first-steps-into-sql-world)  
+    4.1. [Exercise 00 — First steps into SQL world](#exercise-00-first-steps-into-sql-world)  
 5. [Chapter V](#chapter-v) \
-    5.1. [Exercise 01 - First steps into SQL world](#exercise-01-first-steps-into-sql-world)  
+    5.1. [Exercise 01 — First steps into SQL world](#exercise-01-first-steps-into-sql-world)  
 6. [Chapter VI](#chapter-vi) \
-    6.1. [Exercise 02 - First steps into SQL world](#exercise-02-first-steps-into-sql-world)  
+    6.1. [Exercise 02 — First steps into SQL world](#exercise-02-first-steps-into-sql-world)  
 7. [Chapter VII](#chapter-vii) \
-    7.1. [Exercise 03 - First steps into SQL world](#exercise-03-first-steps-into-sql-world)  
+    7.1. [Exercise 03 — First steps into SQL world](#exercise-03-first-steps-into-sql-world)  
 8. [Chapter VIII](#chapter-viii) \
-    8.1. [Exercise 04 - First steps into SQL world](#exercise-04-first-steps-into-sql-world)
+    8.1. [Exercise 04 — First steps into SQL world](#exercise-04-first-steps-into-sql-world)
 9. [Chapter IX](#chapter-ix) \
-    9.1. [Exercise 05 - First steps into SQL world](#exercise-05-first-steps-into-sql-world)
+    9.1. [Exercise 05 — First steps into SQL world](#exercise-05-first-steps-into-sql-world)
 10. [Chapter X](#chapter-x) \
-    10.1. [Exercise 06 - First steps into SQL world](#exercise-06-first-steps-into-sql-world)
+    10.1. [Exercise 06 — First steps into SQL world](#exercise-06-first-steps-into-sql-world)
 11. [Chapter XI](#chapter-xi) \
-    11.1. [Exercise 07 - First steps into SQL world](#exercise-07-first-steps-into-sql-world)
+    11.1. [Exercise 07 — First steps into SQL world](#exercise-07-first-steps-into-sql-world)
 12. [Chapter XII](#chapter-xii) \
-    12.1. [Exercise 08 - First steps into SQL world](#exercise-08-first-steps-into-sql-world)
+    12.1. [Exercise 08 — First steps into SQL world](#exercise-08-first-steps-into-sql-world)
 13. [Chapter XIII](#chapter-xiii) \
-    13.1. [Exercise 09 - First steps into SQL world](#exercise-09-first-steps-into-sql-world)
+    13.1. [Exercise 09 — First steps into SQL world](#exercise-09-first-steps-into-sql-world)
 
 ## Chapter I
 ## Preamble
@@ -55,7 +55,7 @@ Please take a look at some SQL standards below and try to think about the future
 ## Chapter II
 ## General Rules
 
-- - Use this page as your only reference. Do not listen to rumors and speculations about how to prepare your solution.
+- Use this page as your only reference. Do not listen to rumors and speculations about how to prepare your solution.
 - Make sure you are using the latest version of PostgreSQL.
 - It is perfectly fine if you use the IDE to write source code (aka SQL script).
 - To be evaluated, your solution must be in your GIT repository.
@@ -79,35 +79,35 @@ Please take a look at some SQL standards below and try to think about the future
 
 
 1. **pizzeria** table (Dictionary Table with available pizzerias)
-- field id - primary key
-- field name - name of pizzeria
-- field rating - average rating of pizzeria (from 0 to 5 points)
+- field id — primary key
+- field name — name of pizzeria
+- field rating — average rating of pizzeria (from 0 to 5 points)
 2. **person** table (Dictionary Table with persons who loves pizza)
-- field id - primary key
-- field name - name of person
-- field age - age of person
-- field gender - gender of person
-- field address - address of person
+- field id — primary key
+- field name — name of person
+- field age — age of person
+- field gender — gender of person
+- field address — address of person
 3. **menu** table (Dictionary Table with available menu and price for concrete pizza)
-- field id - primary key
-- field pizzeria_id - foreign key to pizzeria
-- field pizza_name - name of pizza in pizzeria
-- field price - price of concrete pizza
+- field id — primary key
+- field pizzeria_id — foreign key to pizzeria
+- field pizza_name — name of pizza in pizzeria
+- field price — price of concrete pizza
 4. **person_visits** table (Operational Table with information about visits of pizzeria)
-- field id - primary key
-- field person_id - foreign key to person
-- field pizzeria_id - foreign key to pizzeria
-- field visit_date - date (for example 2022-01-01) of person visit 
+- field id — primary key
+- field person_id — foreign key to person
+- field pizzeria_id — foreign key to pizzeria
+- field visit_date — date (for example 2022-01-01) of person visit 
 5. **person_order** table (Operational Table with information about persons orders)
-- field id - primary key
-- field person_id - foreign key to person
-- field menu_id - foreign key to menu
-- field order_date - date (for example 2022-01-01) of person order 
+- field id — primary key
+- field person_id — foreign key to person
+- field menu_id — foreign key to menu
+- field order_date — date (for example 2022-01-01) of person order 
 
 People's visit and people's order are different entities and don't contain any correlation between data. For example, a customer can be in a restaurant (just looking at the menu) and at the same time place an order in another restaurant by phone or mobile application. Or another case, just be at home and again make a call with order without any visits.
 
 ## Chapter IV
-## Exercise 00 - First steps into SQL world
+## Exercise 00 — First steps into SQL world
 
 | Exercise 00: First steps into SQL world |                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -121,7 +121,7 @@ Please make a select statement which returns all person's names and person's age
 
 
 ## Chapter V
-## Exercise 01 - First steps into SQL world
+## Exercise 01 — First steps into SQL world
 
 | Exercise 01: First steps into SQL world |                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -133,7 +133,7 @@ Please make a select statement which returns all person's names and person's age
 Please make a select statement which returns names , ages for all women from the city ‘Kazan’. Yep, and please sort result by name.
 
 ## Chapter VI
-## Exercise 02 - First steps into SQL world
+## Exercise 02 — First steps into SQL world
 
 | Exercise 02: First steps into SQL world |                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ Please make 2 syntax different select statements which return a list of pizzeria
 - the 2nd select statement must contain `BETWEEN` keyword.
 
 ## Chapter VII
-## Exercise 03 - First steps into SQL world
+## Exercise 03 — First steps into SQL world
 
 | Exercise 03: First steps into SQL world |                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -159,7 +159,7 @@ Please make 2 syntax different select statements which return a list of pizzeria
 Please make a select statement that returns the person identifiers (without duplicates) who visited pizzerias in a period from January 6, 2022 to January 9, 2022 (including all days) or visited pizzerias with identifier 2. Also include ordering clause by person identifier in descending mode.
 
 ## Chapter VIII
-## Exercise 04 - First steps into SQL world
+## Exercise 04 — First steps into SQL world
 
 
 | Exercise 04: First steps into SQL world |                                                                                                                          |
@@ -177,7 +177,7 @@ Finally, please add the ordering clause by calculated column in ascending mode.
 Please pay attention to the quotation marks in your formula!
 
 ## Chapter IX
-## Exercise 05 - First steps into SQL world
+## Exercise 05 — First steps into SQL world
 
 
 | Exercise 05: First steps into SQL world |                                                                                                                          |
@@ -199,7 +199,7 @@ Please take a look at the pattern of internal query.
     WHERE ...
 
 ## Chapter X
-## Exercise 06 - First steps into SQL world
+## Exercise 06 — First steps into SQL world
 
 
 | Exercise 06: First steps into SQL world |                                                                                                                          |
@@ -217,7 +217,7 @@ Use the SQL construction from Exercise 05 and add a new calculated column (use c
         else return false
 
 ## Chapter XI
-## Exercise 07 - First steps into SQL world
+## Exercise 07 — First steps into SQL world
 
 
 | Exercise 07: First steps into SQL world |                                                                                                                          |
@@ -237,7 +237,7 @@ Please make an SQL statement that returns the identifiers of a person, the perso
 And yes... please sort a result by ‘interval_info’ column in ascending mode.
 
 ## Chapter XII
-## Exercise 08 - First steps into SQL world
+## Exercise 08 — First steps into SQL world
 
 
 | Exercise 08: First steps into SQL world |                                                                                                                          |
@@ -250,7 +250,7 @@ And yes... please sort a result by ‘interval_info’ column in ascending mode.
 Create an SQL statement that returns all columns from the `person_order` table with rows whose identifier is an even number. The result must be ordered by the returned identifier.
 
 ## Chapter XIII
-## Exercise 09 - First steps into SQL world
+## Exercise 09 — First steps into SQL world
 
 
 | Exercise 09: First steps into SQL world |                                                                                                                          |
