@@ -1,8 +1,8 @@
-# Day 00 — Piscine SQL
+# Day 00 — SQL Bootcamp
 
 ## _Relational Data Model and SQL_
 
-Resume: Today you will see how relational model works and how to get needed data based on basic constructions of  SQL
+Resume: Today you will see how relational model works and how to get needed data based on basic constructions of SQL.
 
 💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
 
