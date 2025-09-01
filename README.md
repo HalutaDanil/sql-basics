@@ -1,5 +1,3 @@
-# Day 00 — SQL Bootcamp
-
 ## _Relational Data Model and SQL_
 
 In this project you will learn how to create SQL queries using inner subqueries in the FROM and SELECT clauses, as well as filter data by date range.
@@ -11,23 +9,23 @@ These skills will be useful for data analysis, report generation, and developing
 💡 [Tap here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to leave your feedback on the project**. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
 
 ## Contents
-- [How to learn at «School 21»](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#how-to-learn-at-school-21)
-- [Chapter I](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#chapter-i)
-- [Preamble](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#preamble)
-- [Chapter II](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#chapter-ii)
-- [Rules of the day](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#rules-of-the-day)
-- [Chapter III](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#chapter-iii)
-- [First steps into SQL world](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#first-steps-into-sql-world)
-- [Exercise 00](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-00)
-- [Exercise 01](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-01)
-- [Exercise 02](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-02)
-- [Exercise 03](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-03)
-- [Exercise 04](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-04)
-- [Exercise 05](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-05)
-- [Exercise 06](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-06)
-- [Exercise 07](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-07)
-- [Exercise 08](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-08)
-- [Exercise 09](https://repos.21-school.ru/masters/SQL_beginner._Day00.ID_574086#exercise-09)
+- [How to learn at «School 21»](#how-to-learn-at-«school-21»)
+- [Chapter I](#chapter-i)
+- [Preamble](#preamble)
+- [Chapter II](#chapter-ii)
+- [Rules of the day](#rules-of-the-day)
+- [Chapter III](#chapter-iii)
+- [First steps into SQL world](#first-steps-into-sql-world)
+- [Exercise 00](#exercise-00)
+- [Exercise 01](#exercise-01)
+- [Exercise 02](#exercise-02)
+- [Exercise 03](#exercise-03)
+- [Exercise 04](#exercise-04)
+- [Exercise 05](#exercise-05)
+- [Exercise 06](#exercise-06)
+- [Exercise 07](#exercise-07)
+- [Exercise 08](#exercise-08)
+- [Exercise 09](#exercise-09)
 
 
 ## How to learn at «School 21»
@@ -68,7 +66,7 @@ Please take a look at some SQL standards below and try to think about the future
 - It is perfectly fine if you use the IDE to write source code (aka SQL script).
 - You should not leave any files in your directory other than those explicitly specified by the exercise instructions. It is recommended that you modify your `.gitignore' to avoid accidents.
 -  Please make sure you have your own database and access to it on your PostgreSQL cluster.
-- Please download a [script](materials/model.sql) with Database Model here and apply the script to your database (you can use command line with psql or just run it through any IDE, for example DataGrip from JetBrains or pgAdmin from PostgreSQL community). 
+- Please download a [script](./materials/model.sql) with Database Model here and apply the script to your database (you can use command line with psql or just run it through any IDE, for example DataGrip from JetBrains or pgAdmin from PostgreSQL community). 
 - All tasks contain a list of Allowed and Denied sections with listed database options, database types, SQL constructions etc. Please have a look at the section before you start.
 - And may the SQL-Force be with you!
 - Absolutely anything can be represented in SQL! Let's get started and have fun!
@@ -106,8 +104,6 @@ Please take a look at some SQL standards below and try to think about the future
 - field order_date — date (for example 2022-01-01) of person order 
 
 People's visit and people's order are different entities and don't contain any correlation between data. For example, a customer can be in a restaurant (just looking at the menu) and at the same time place an order in another restaurant by phone or mobile application. Or another case, just be at home and again make a call with order without any visits.
-
-Make sure to check out the materials in the 'Materials' section—they’ll be really helpful for your project.
 
 ## Chapter III
 ## First steps into SQL world
