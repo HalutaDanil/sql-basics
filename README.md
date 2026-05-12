@@ -11,27 +11,31 @@
 <a name="english"></a>
 ## 🇬🇧 English
 
-Introduction to SQL: from simple SELECT queries to complex table joins. Working with a dataset about pizzerias, people, and their visits.
+First steps into SQL using a pizzeria dataset. The goal was to learn how to ask precise questions of a relational database and get exactly the data needed.
 
-### 🛠️ Tech Stack
+### What was done
+
+| Task | What & Why |
+|------|-----------|
+| Simple SELECT | Retrieved all rows from a table. The foundation of every query. |
+| Filtering (WHERE) | Selected rows matching conditions. Learned how databases filter data at the engine level. |
+| DISTINCT | Extracted unique values. Essential for deduplication and understanding data cardinality. |
+| LIMIT / OFFSET | Paginated results. Critical for performance when dealing with large tables. |
+| BETWEEN / IN | Checked ranges and membership sets. More readable and often faster than multiple OR conditions. |
+| LIKE | Searched with wildcards. Learned pattern matching for partial string queries. |
+| IS NULL | Found missing data. Real-world data is incomplete; knowing how to handle NULLs is crucial. |
+| Multi-column ORDER BY | Sorted by multiple fields with different directions. Precision in result ordering. |
+| Aggregates | Used `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`. Transformed raw rows into summary statistics. |
+| GROUP BY + HAVING | Grouped data and filtered groups. Learned the difference between `WHERE` (row filter) and `HAVING` (group filter). |
+
+### Key takeaways
+- SQL is declarative: you describe **what** you want, not **how** to get it.
+- `WHERE` filters rows before aggregation; `HAVING` filters after. Mixing them up is a common beginner mistake.
+- NULL is not a value — it is the absence of one. `IS NULL` is the only correct way to check for it.
+
+### Tech Stack
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square)
-
-### ✨ Features
-
-| Exercise | Topic |
-|----------|-------|
-| ex00 | Simple SELECT with sorting |
-| ex01 | Filtering with WHERE |
-| ex02 | DISTINCT and unique values |
-| ex03 | LIMIT and OFFSET |
-| ex04 | BETWEEN, IN |
-| ex05 | LIKE and patterns |
-| ex06 | IS NULL |
-| ex07 | ORDER BY with multiple fields |
-| ex08 | Aggregate functions |
-| ex09 | GROUP BY + HAVING |
-
 
 ---
 
@@ -42,27 +46,31 @@ Introduction to SQL: from simple SELECT queries to complex table joins. Working 
 <a name="русский"></a>
 ## 🇷🇺 Русский
 
-Введение в SQL: от простых SELECT-запросов до сложных объединений таблиц. Работа с датасетом о пиццериях, людях и их посещениях.
+Первые шаги в SQL на датасете пиццерий. Цель — научиться задавать точные вопросы реляционной базе данных и получать именно нужные данные.
 
-### 🛠️ Стек технологий
+### Что было сделано
+
+| Задача | Что и зачем |
+|--------|-------------|
+| Простой SELECT | Получение всех строк из таблицы. Основа любого запроса. |
+| Фильтрация (WHERE) | Выбор строк по условиям. Изучено, как база данных фильтрует данные на уровне движка. |
+| DISTINCT | Извлечение уникальных значений. Необходимо для дедупликации и понимания кардинальности данных. |
+| LIMIT / OFFSET | Пагинация результатов. Критично для производительности при работе с большими таблицами. |
+| BETWEEN / IN | Проверка диапазонов и множеств. Читабельнее и часто быстрее множественных OR. |
+| LIKE | Поиск с подстановочными символами. Изучено паттерн-матчинг для частичных строковых запросов. |
+| IS NULL | Поиск отсутствующих данных. Реальные данные неполны; умение работать с NULL критично. |
+| ORDER BY по нескольким колонкам | Сортировка по нескольким полям с разными направлениями. Точность в упорядочивании результатов. |
+| Агрегатные функции | Использование `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`. Преобразование сырых строк в сводную статистику. |
+| GROUP BY + HAVING | Группировка данных и фильтрация групп. Изучена разница между `WHERE` (фильтр строк) и `HAVING` (фильтр групп). |
+
+### Ключевые выводы
+- SQL декларативен: вы описываете, **что** хотите получить, а не **как** это сделать.
+- `WHERE` фильтрует строки до агрегации; `HAVING` — после. Их путаница — типичная ошибка новичков.
+- NULL — не значение, а его отсутствие. `IS NULL` — единственно верный способ проверки.
+
+### Стек технологий
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square)
-
-### ✨ Возможности
-
-| Задача | Тема |
-|--------|------|
-| ex00 | Простой SELECT с сортировкой |
-| ex01 | Фильтрация с WHERE |
-| ex02 | DISTINCT и уникальные значения |
-| ex03 | LIMIT и OFFSET |
-| ex04 | BETWEEN, IN |
-| ex05 | LIKE и паттерны |
-| ex06 | IS NULL |
-| ex07 | ORDER BY с несколькими полями |
-| ex08 | Агрегатные функции |
-| ex09 | GROUP BY + HAVING |
-
 
 ---
 
