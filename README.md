@@ -19,11 +19,31 @@ Introduction to SQL: from simple SELECT queries to complex table joins. Working 
 
 ### ✨ Features
 
-| Exercise | Topic |\n|----------|-------|\n| ex00 | Simple SELECT with sorting |\n| ex01 | Filtering with WHERE |\n| ex02 | DISTINCT and unique values |\n| ex03 | LIMIT and OFFSET |\n| ex04 | BETWEEN, IN |\n| ex05 | LIKE and patterns |\n| ex06 | IS NULL |\n| ex07 | ORDER BY with multiple fields |\n| ex08 | Aggregate functions |\n| ex09 | GROUP BY + HAVING |
+| Exercise | Topic |
+|----------|-------|
+| ex00 | Simple SELECT with sorting |
+| ex01 | Filtering with WHERE |
+| ex02 | DISTINCT and unique values |
+| ex03 | LIMIT and OFFSET |
+| ex04 | BETWEEN, IN |
+| ex05 | LIKE and patterns |
+| ex06 | IS NULL |
+| ex07 | ORDER BY with multiple fields |
+| ex08 | Aggregate functions |
+| ex09 | GROUP BY + HAVING |
 
 ### 🚀 Quick Start
 
-```sql\n-- Top 3 pizzerias by average check\nSELECT p.name, AVG(m.price) as avg_price\nFROM pizzeria p\nJOIN menu m ON p.id = m.pizzeria_id\nGROUP BY p.name\nHAVING AVG(m.price) > 800\nORDER BY avg_price DESC\nLIMIT 3;\n```
+```sql
+-- Top 3 pizzerias by average check
+SELECT p.name, AVG(m.price) as avg_price
+FROM pizzeria p
+JOIN menu m ON p.id = m.pizzeria_id
+GROUP BY p.name
+HAVING AVG(m.price) > 800
+ORDER BY avg_price DESC
+LIMIT 3;
+```
 
 ---
 
@@ -42,11 +62,31 @@ Introduction to SQL: from simple SELECT queries to complex table joins. Working 
 
 ### ✨ Возможности
 
-| Задача | Тема |\n|--------|------|\n| ex00 | Простой SELECT с сортировкой |\n| ex01 | Фильтрация с WHERE |\n| ex02 | DISTINCT и уникальные значения |\n| ex03 | LIMIT и OFFSET |\n| ex04 | BETWEEN, IN |\n| ex05 | LIKE и паттерны |\n| ex06 | IS NULL |\n| ex07 | ORDER BY с несколькими полями |\n| ex08 | Агрегатные функции |\n| ex09 | GROUP BY + HAVING |
+| Задача | Тема |
+|--------|------|
+| ex00 | Простой SELECT с сортировкой |
+| ex01 | Фильтрация с WHERE |
+| ex02 | DISTINCT и уникальные значения |
+| ex03 | LIMIT и OFFSET |
+| ex04 | BETWEEN, IN |
+| ex05 | LIKE и паттерны |
+| ex06 | IS NULL |
+| ex07 | ORDER BY с несколькими полями |
+| ex08 | Агрегатные функции |
+| ex09 | GROUP BY + HAVING |
 
 ### 🚀 Быстрый старт
 
-```sql\n-- Топ-3 пиццерии по среднему чеку\nSELECT p.name, AVG(m.price) as avg_price\nFROM pizzeria p\nJOIN menu m ON p.id = m.pizzeria_id\nGROUP BY p.name\nHAVING AVG(m.price) > 800\nORDER BY avg_price DESC\nLIMIT 3;\n```
+```sql
+-- Топ-3 пиццерии по среднему чеку
+SELECT p.name, AVG(m.price) as avg_price
+FROM pizzeria p
+JOIN menu m ON p.id = m.pizzeria_id
+GROUP BY p.name
+HAVING AVG(m.price) > 800
+ORDER BY avg_price DESC
+LIMIT 3;
+```
 
 ---
 
