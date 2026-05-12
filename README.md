@@ -32,18 +32,6 @@ Introduction to SQL: from simple SELECT queries to complex table joins. Working 
 | ex08 | Aggregate functions |
 | ex09 | GROUP BY + HAVING |
 
-### 🚀 Quick Start
-
-```sql
--- Top 3 pizzerias by average check
-SELECT p.name, AVG(m.price) as avg_price
-FROM pizzeria p
-JOIN menu m ON p.id = m.pizzeria_id
-GROUP BY p.name
-HAVING AVG(m.price) > 800
-ORDER BY avg_price DESC
-LIMIT 3;
-```
 
 ---
 
@@ -75,18 +63,6 @@ LIMIT 3;
 | ex08 | Агрегатные функции |
 | ex09 | GROUP BY + HAVING |
 
-### 🚀 Быстрый старт
-
-```sql
--- Топ-3 пиццерии по среднему чеку
-SELECT p.name, AVG(m.price) as avg_price
-FROM pizzeria p
-JOIN menu m ON p.id = m.pizzeria_id
-GROUP BY p.name
-HAVING AVG(m.price) > 800
-ORDER BY avg_price DESC
-LIMIT 3;
-```
 
 ---
 
